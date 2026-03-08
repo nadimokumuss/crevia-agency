@@ -7,6 +7,7 @@ const quickLinks = [
   { label: "Hakkımızda", href: "/hakkimizda" },
   { label: "Referanslarımız", href: "/referanslarimiz" },
   { label: "Hizmetlerimiz", href: "/hizmetlerimiz" },
+  { label: "Ekibimiz", href: "/ekibimiz" },
   { label: "Crevia Works", href: "/crevia-works" },
   { label: "İletişim", href: "/iletisim" },
 ];
@@ -79,7 +80,7 @@ export function Footer() {
             <h3 className="font-clash text-lg font-semibold text-white">
               Hizmetler
             </h3>
-            <ul className="space-y-3">
+            <ul className="grid grid-cols-2 gap-x-4 gap-y-2 sm:grid-cols-1 sm:space-y-0">
               {services.map((service) => (
                 <li key={service}>
                   <span className="font-poppins text-sm text-white/60 transition-colors duration-200 hover:text-hardal-sarisi cursor-default">
@@ -106,9 +107,9 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <div className="flex items-center gap-3 font-poppins text-sm text-white/60">
-                  <MapPin size={16} className="shrink-0 text-hardal-sarisi" />
-                  Acıbadem, Acıbadem Cd. no: 169 34660 Üsküdar/İstanbul
+                <div className="flex items-start gap-3 font-poppins text-sm text-white/60">
+                  <MapPin size={16} className="mt-0.5 shrink-0 text-hardal-sarisi" />
+                  <span className="break-words">Acıbadem, Acıbadem Cd. no: 169 34660 Üsküdar/İstanbul</span>
                 </div>
               </li>
             </ul>

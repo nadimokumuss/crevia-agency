@@ -52,7 +52,7 @@ export default function HeroSection() {
           variants={staggerContainer}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="font-clash text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
+          className="font-clash text-3xl sm:text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
         >
           {heroWords.map((word, i) => (
             <motion.span
@@ -80,7 +80,7 @@ export default function HeroSection() {
             <motion.span
               key={i}
               variants={fadeInUp}
-              className="font-syne text-lg md:text-xl text-nane-yesili/80"
+              className="font-syne text-base sm:text-lg md:text-xl text-nane-yesili/80"
             >
               {slogan.emoji} {slogan.text}
             </motion.span>

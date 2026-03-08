@@ -43,7 +43,7 @@ export default function TestimonialsSection() {
           onMouseLeave={() => setIsPaused(false)}
         >
           {/* Testimonial card */}
-          <div className="relative min-h-[280px] flex items-center justify-center">
+          <div className="relative min-h-[220px] sm:min-h-[280px] flex items-center justify-center">
             <AnimatePresence mode="wait">
               <motion.div
                 key={current.id}
@@ -59,7 +59,7 @@ export default function TestimonialsSection() {
                 </div>
 
                 {/* Testimonial text */}
-                <p className="font-poppins text-lg md:text-xl text-nane-yesili/90 italic leading-relaxed mb-8">
+                <p className="font-poppins text-base sm:text-lg md:text-xl text-nane-yesili/90 italic leading-relaxed mb-8">
                   &ldquo;{current.content}&rdquo;
                 </p>
 

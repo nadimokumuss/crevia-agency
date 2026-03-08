@@ -46,7 +46,7 @@ export default function ContactInfo() {
               <p className="font-syne text-sm text-nane-yesili/60 mb-0.5">
                 {item.label}
               </p>
-              <p className="font-poppins text-white">{item.value}</p>
+              <p className="font-poppins text-white break-words">{item.value}</p>
             </div>
           </motion.div>
         );

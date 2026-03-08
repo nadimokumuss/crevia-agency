@@ -18,6 +18,7 @@ const navLinks: NavLink[] = [
   { label: "Hakkımızda", href: "/hakkimizda" },
   { label: "Referanslarımız", href: "/referanslarimiz" },
   { label: "Hizmetlerimiz", href: "/hizmetlerimiz" },
+  { label: "Ekibimiz", href: "/ekibimiz" },
   { label: "Crevia Works", href: "/crevia-works" },
 ];
 
@@ -248,7 +249,7 @@ export function Navbar() {
                 {/* Mobile footer */}
                 <div className="border-t border-mat-yesil/20 p-6">
                   <p className="font-poppins text-xs text-white/40">
-                    &copy; 2024 Crevia Agency
+                    &copy; 2026 Crevia Agency
                   </p>
                 </div>
               </motion.div>
