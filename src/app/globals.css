@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-koyu-yesil: #0E2815;
+  --color-orman-yesili: #295740;
+  --color-mat-yesil: #537D5D;
+  --color-hardal-sarisi: #E0BB46;
+  --color-nane-yesili: #B0D3C2;
+
+  --font-clash: var(--font-clash-display);
+  --font-syne: var(--font-syne);
+  --font-poppins: var(--font-poppins);
+}
+
+body {
+  background: var(--color-koyu-yesil);
+  color: #ffffff;
+  font-family: var(--font-poppins), system-ui, sans-serif;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus visible styles */
+*:focus-visible {
+  outline: 2px solid var(--color-hardal-sarisi);
+  outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-koyu-yesil);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-mat-yesil);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-hardal-sarisi);
+}
