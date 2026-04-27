@@ -10,123 +10,190 @@ export interface Project {
 export const categories = [
   "Tümü",
   "Web Tasarım",
-  "Marka Kimliği",
-  "E-Ticaret",
-  "UI/UX",
-  "Dijital Pazarlama",
   "Sosyal Medya",
   "Video Prodüksiyon",
   "Grafik Tasarım",
-  "Yapay Zeka",
 ];
 
 export const projects: Project[] = [
   {
-    id: "proje-1",
-    title: "TechVision Kurumsal Site",
+    id: "cindy-acibadem",
+    title: "Cindy Acıbadem",
     category: "Web Tasarım",
     description:
-      "Teknoloji firması için modern ve interaktif kurumsal web sitesi tasarımı ve geliştirmesi.",
+      "Güzellik merkezi için modern web sitesi tasarımı ve geliştirmesi. Sosyal medya yönetimi, video prodüksiyon ve grafik tasarım hizmetleri.",
     image: "/images/projects/placeholder.jpg",
-    tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    tags: ["Web Tasarım", "Sosyal Medya", "Video Prodüksiyon", "Grafik Tasarım"],
   },
   {
-    id: "proje-2",
-    title: "GreenLife Marka Kimliği",
-    category: "Marka Kimliği",
-    description:
-      "Organik gıda markası için sıfırdan marka kimliği oluşturma projesi.",
-    image: "/images/projects/placeholder.jpg",
-    tags: ["Logo", "Kurumsal Kimlik", "Ambalaj"],
-  },
-  {
-    id: "proje-3",
-    title: "StyleHub E-Ticaret",
-    category: "E-Ticaret",
-    description:
-      "Moda perakende markası için kapsamlı e-ticaret platformu geliştirme.",
-    image: "/images/projects/placeholder.jpg",
-    tags: ["Shopify", "Özel Tema", "Ödeme Entegrasyonu"],
-  },
-  {
-    id: "proje-4",
-    title: "FinanceApp Dashboard",
-    category: "UI/UX",
-    description:
-      "Fintech uygulaması için kullanıcı deneyimi tasarımı ve dashboard arayüzü.",
-    image: "/images/projects/placeholder.jpg",
-    tags: ["Figma", "Prototip", "Kullanılabilirlik Testi"],
-  },
-  {
-    id: "proje-5",
-    title: "HealthPlus Dijital Kampanya",
-    category: "Dijital Pazarlama",
-    description:
-      "Sağlık sektöründe dijital pazarlama stratejisi ve uygulama.",
-    image: "/images/projects/placeholder.jpg",
-    tags: ["Google Ads", "SEO", "Sosyal Medya"],
-  },
-  {
-    id: "proje-6",
-    title: "EduConnect Platform",
+    id: "aus-coffee",
+    title: "AUS Coffee Co.",
     category: "Web Tasarım",
     description:
-      "Online eğitim platformu için responsive web uygulaması geliştirme.",
+      "Specialty coffee markası için kurumsal web sitesi. Sosyal medya yönetimi, içerik üretimi ve görsel kimlik çalışmaları.",
     image: "/images/projects/placeholder.jpg",
-    tags: ["React", "Node.js", "WebSocket"],
+    tags: ["Web Tasarım", "Sosyal Medya", "Grafik Tasarım"],
   },
   {
-    id: "proje-7",
-    title: "ArtisanCafe Rebrand",
-    category: "Marka Kimliği",
+    id: "bosfor-terrace",
+    title: "Bosfor Terrace Grill",
+    category: "Web Tasarım",
     description:
-      "Butik kafe zinciri için marka yenileme ve görsel kimlik çalışması.",
+      "Restaurant & lounge için web sitesi tasarımı. Tanıtım filmi prodüksiyonu, sosyal medya yönetimi ve reklam çalışmaları.",
     image: "/images/projects/placeholder.jpg",
-    tags: ["Rebranding", "Mekan Tasarımı", "Sosyal Medya"],
+    tags: ["Web Tasarım", "Video Prodüksiyon", "Sosyal Medya"],
   },
   {
-    id: "proje-8",
-    title: "AutoParts Online Mağaza",
-    category: "E-Ticaret",
+    id: "most-hooqah",
+    title: "Most Hooqah",
+    category: "Web Tasarım",
     description:
-      "Oto yedek parça firması için B2B ve B2C e-ticaret çözümü.",
+      "Nargile & lounge mekanı için web sitesi ve dijital kimlik çalışması. Sosyal medya ve grafik tasarım hizmetleri.",
     image: "/images/projects/placeholder.jpg",
-    tags: ["WooCommerce", "ERP Entegrasyonu", "Toptan Satış"],
+    tags: ["Web Tasarım", "Sosyal Medya", "Grafik Tasarım"],
   },
   {
-    id: "proje-9",
-    title: "NovaBrand Sosyal Medya Yönetimi",
+    id: "zen-leo-gym",
+    title: "Zen Leo Gym",
     category: "Sosyal Medya",
     description:
-      "Kozmetik markası için kapsamlı sosyal medya stratejisi ve içerik üretimi.",
+      "Spor salonu için kapsamlı sosyal medya yönetimi, içerik üretimi ve reklam kampanyaları.",
     image: "/images/projects/placeholder.jpg",
-    tags: ["Instagram", "İçerik Stratejisi", "Influencer"],
+    tags: ["Sosyal Medya", "Video Prodüksiyon", "Grafik Tasarım"],
   },
   {
-    id: "proje-10",
-    title: "SkyView Drone Tanıtım Filmi",
+    id: "blak-coffee",
+    title: "BLAK Coffee Co.",
+    category: "Sosyal Medya",
+    description:
+      "Kahve topluluğu markası için sosyal medya stratejisi, içerik üretimi ve görsel kimlik çalışmaları.",
+    image: "/images/projects/placeholder.jpg",
+    tags: ["Sosyal Medya", "Grafik Tasarım", "Video Prodüksiyon"],
+  },
+  {
+    id: "san-kuafor",
+    title: "San Kuaför",
     category: "Video Prodüksiyon",
     description:
-      "Gayrimenkul firması için drone çekimi ve profesyonel tanıtım filmi prodüksiyonu.",
+      "Kuaför salonu için tanıtım filmi, reels prodüksiyonu, sosyal medya yönetimi ve grafik tasarım.",
     image: "/images/projects/placeholder.jpg",
-    tags: ["Drone Çekim", "Tanıtım Filmi", "Post Prodüksiyon"],
+    tags: ["Video Prodüksiyon", "Sosyal Medya", "Grafik Tasarım"],
   },
   {
-    id: "proje-11",
-    title: "FestivalX Afiş & Tanıtım Seti",
+    id: "emre-ayaksiz",
+    title: "Emre Ayaksız",
+    category: "Video Prodüksiyon",
+    description:
+      "Kişisel marka için içerik prodüksiyonu, sosyal medya yönetimi ve görsel kimlik çalışmaları.",
+    image: "/images/projects/placeholder.jpg",
+    tags: ["Video Prodüksiyon", "Sosyal Medya", "Grafik Tasarım"],
+  },
+  {
+    id: "gusta-lounge",
+    title: "Gusta Lounge",
+    category: "Video Prodüksiyon",
+    description:
+      "Lounge & restaurant için atmosfer filmleri, sosyal medya içerikleri ve reklam prodüksiyonu.",
+    image: "/images/projects/placeholder.jpg",
+    tags: ["Video Prodüksiyon", "Sosyal Medya", "Grafik Tasarım"],
+  },
+  {
+    id: "resident-istanbul",
+    title: "Resident İstanbul",
+    category: "Video Prodüksiyon",
+    description:
+      "İstanbul mekanı için tanıtım filmleri, etkinlik çekimleri ve sosyal medya içerik üretimi.",
+    image: "/images/projects/placeholder.jpg",
+    tags: ["Video Prodüksiyon", "Sosyal Medya", "Grafik Tasarım"],
+  },
+  {
+    id: "dry-center",
+    title: "DRY CENTER",
     category: "Grafik Tasarım",
     description:
-      "Müzik festivali için baskı ve dijital ortamlara yönelik kapsamlı grafik tasarım çalışması.",
+      "Kuru temizleme zinciri için grafik tasarım, reklam materyalleri, sosyal medya ve video prodüksiyon hizmetleri.",
     image: "/images/projects/placeholder.jpg",
-    tags: ["Afiş Tasarım", "Sosyal Medya Kit", "Motion Graphics"],
+    tags: ["Grafik Tasarım", "Sosyal Medya", "Video Prodüksiyon"],
   },
   {
-    id: "proje-12",
-    title: "SmartDesk AI Asistan",
-    category: "Yapay Zeka",
+    id: "mondi-home",
+    title: "Mondi Home",
+    category: "Grafik Tasarım",
     description:
-      "Müşteri hizmetleri için yapay zeka destekli chatbot ve otomasyon sistemi geliştirme.",
+      "Ev tekstili markası için grafik tasarım, katalog tasarımı, sosyal medya ve video prodüksiyon.",
     image: "/images/projects/placeholder.jpg",
-    tags: ["AI Chatbot", "NLP", "Otomasyon"],
+    tags: ["Grafik Tasarım", "Sosyal Medya", "Video Prodüksiyon"],
+  },
+  {
+    id: "beko-tekintaş",
+    title: "Beko Tekintaş",
+    category: "Sosyal Medya",
+    description:
+      "Beko yetkili bayi için sosyal medya yönetimi, reklam kampanyaları ve grafik tasarım.",
+    image: "/images/projects/placeholder.jpg",
+    tags: ["Sosyal Medya", "Grafik Tasarım", "Video Prodüksiyon"],
+  },
+  {
+    id: "one2one-coffee",
+    title: "One2One Coffee",
+    category: "Sosyal Medya",
+    description:
+      "Kahvehane markası için sosyal medya stratejisi, içerik üretimi ve görsel kimlik çalışmaları.",
+    image: "/images/projects/placeholder.jpg",
+    tags: ["Sosyal Medya", "Grafik Tasarım", "Video Prodüksiyon"],
+  },
+  {
+    id: "smoky-lounge",
+    title: "Smoky Lounge",
+    category: "Sosyal Medya",
+    description:
+      "Bakırköy lounge mekanı için sosyal medya yönetimi, tanıtım içerikleri ve reklam materyalleri.",
+    image: "/images/projects/placeholder.jpg",
+    tags: ["Sosyal Medya", "Video Prodüksiyon", "Grafik Tasarım"],
+  },
+  {
+    id: "diva-grup-optik",
+    title: "Diva Grup Optik",
+    category: "Grafik Tasarım",
+    description:
+      "Optik zinciri için grafik tasarım, reklam materyalleri, sosyal medya yönetimi ve video prodüksiyon.",
+    image: "/images/projects/placeholder.jpg",
+    tags: ["Grafik Tasarım", "Sosyal Medya", "Video Prodüksiyon"],
+  },
+  {
+    id: "adora-kuafor",
+    title: "Adora Kuaför",
+    category: "Sosyal Medya",
+    description:
+      "Kuaför salonu için sosyal medya yönetimi, içerik üretimi, grafik tasarım ve reklam hizmetleri.",
+    image: "/images/projects/placeholder.jpg",
+    tags: ["Sosyal Medya", "Grafik Tasarım", "Video Prodüksiyon"],
+  },
+  {
+    id: "yumm-pizza",
+    title: "Yumm Pizza",
+    category: "Grafik Tasarım",
+    description:
+      "Pizza markası için menü tasarımı, görsel kimlik, sosyal medya yönetimi ve tanıtım filmleri.",
+    image: "/images/projects/placeholder.jpg",
+    tags: ["Grafik Tasarım", "Sosyal Medya", "Video Prodüksiyon"],
+  },
+  {
+    id: "pop-house",
+    title: "Pop House İstanbul",
+    category: "Sosyal Medya",
+    description:
+      "Eğlence mekanı için sosyal medya yönetimi, etkinlik tanıtımları, grafik tasarım ve video prodüksiyon.",
+    image: "/images/projects/placeholder.jpg",
+    tags: ["Sosyal Medya", "Video Prodüksiyon", "Grafik Tasarım"],
+  },
+  {
+    id: "turkdegs",
+    title: "Türkdegs",
+    category: "Grafik Tasarım",
+    description:
+      "Marka için grafik tasarım, görsel kimlik çalışmaları, sosyal medya yönetimi ve içerik üretimi.",
+    image: "/images/projects/placeholder.jpg",
+    tags: ["Grafik Tasarım", "Sosyal Medya", "Video Prodüksiyon"],
   },
 ];

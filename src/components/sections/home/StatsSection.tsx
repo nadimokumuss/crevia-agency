@@ -10,7 +10,7 @@ const stats = [
   { value: 200, suffix: "+", label: "Tamamlanan Proje" },
   { value: 50, suffix: "+", label: "Mutlu Müşteri" },
   { value: 1, suffix: "+", label: "Yıllık Deneyim" },
-  { value: 12, suffix: "", label: "Aktif Müşteri" },
+  { value: 20, suffix: "+", label: "Aktif Müşteri" },
 ];
 
 export default function StatsSection() {
