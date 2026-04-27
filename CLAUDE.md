@@ -7,9 +7,36 @@
 - **Adres**: Acıbadem, Acıbadem Cd. no: 169 34660 Üsküdar/İstanbul
 - **Instagram**: https://www.instagram.com/creviagency/
 - **LinkedIn**: https://www.linkedin.com/company/crevia-agency
-- **Referans Markalar**: Emre Ayaksız, San Kuaför, Dry Center, Beko, Mondi, Cindy Güzellik
-- **Rakamlar**: 200+ tamamlanan proje, 50+ mutlu müşteri, 12 aktif müşteri, 1+ yıllık deneyim
+- **Rakamlar**: 200+ tamamlanan proje, 50+ mutlu müşteri, 20+ aktif müşteri, 1+ yıllık deneyim
 - **Not**: Global/uluslararası marka yok, yalan söylenmemeli
+
+## Gerçek Referans Markalar (20 adet)
+Tüm markalarda ortak: Sosyal Medya Yönetimi, Video Prodüksiyon, Grafik Tasarım & Reklam
+
+Web sitesi de yapılanlar: **Cindy Acıbadem, AUS Coffee Co., Bosfor Terrace Grill, Most Hooqah**
+
+| Marka | Instagram |
+|-------|-----------|
+| Zen Leo Gym | @zenleogym |
+| BLAK Coffee Co. | @blakcommunity_ |
+| San Kuaför | @sankuaforumraniye_ |
+| Mondi Home | @tekintasmondihome |
+| Beko Tekintaş | @tekintasbeko |
+| Cindy Acıbadem | @cindyacibadem |
+| DRY CENTER | @drycentercom |
+| AUS Coffee Co. | @auscoffee.co |
+| One2One Coffee | @one2onecoffee |
+| Gusta Lounge | @gustalounge |
+| Smoky Lounge | @smokyloungebakirkoy |
+| Bosfor Terrace Grill | @bosforterrace |
+| Diva Grup Optik | @divagrupoptik |
+| Emre Ayaksız | @emreayaksiz |
+| Most Hooqah | @mosthooqah |
+| Adora Kuaför | @adorakuafor |
+| Resident İstanbul | @residentistanbul |
+| Yumm Pizza | @yummpizza_ |
+| Pop House İstanbul | @pophouseistanbul |
+| Türkdegs | @turkdegs |
 
 ## Mimari
 - **Framework**: Next.js (App Router) + TypeScript
@@ -17,6 +44,7 @@
 - **Animasyonlar**: Framer Motion
 - **İkonlar**: Lucide React
 - **Fontlar**: Clash Display (local, variable), Syne (Google), Poppins (Google)
+- **Repo**: https://github.com/nadimokumuss/crevia-agency
 
 ## Renk Tokenlari
 | Token | Hex | Kullanım |
@@ -36,7 +64,8 @@
 - `/` → Ana Sayfa (7 bölüm)
 - `/hakkimizda` → Hakkımızda
 - `/hizmetlerimiz` → Hizmetlerimiz
-- `/referanslarimiz` → Referanslarımız
+- `/referanslarimiz` → Referanslarımız (20 gerçek marka, kategori filtreli)
+- `/ekibimiz` → Ekibimiz
 - `/crevia-works` → Crevia Works (SaaS alt marka)
 - `/iletisim` → İletişim
 
@@ -60,15 +89,21 @@ src/
   components/
     ui/          # Yeniden kullanılabilir UI bileşenleri
     layout/      # Navbar, Footer, PageTransition
-    sections/    # Sayfa bölümleri (home/, about/, services/, references/, crevia-works/, contact/)
-  data/          # Veri dosyaları (services, projects, testimonials)
+    sections/    # Sayfa bölümleri (home/, about/, services/, references/, crevia-works/, contact/, team/)
+  data/          # Veri dosyaları (services, projects, testimonials, team)
   lib/           # Yardımcı fonksiyonlar (cn, animations, hooks)
 ```
 
 ## Önemli Veri Dosyaları
 - `src/data/services.ts` → 11 hizmet tanımı
-- `src/data/projects.ts` → Proje ve kategori verileri (10 kategori)
-- `src/data/testimonials.ts` → Müşteri yorumları (11 yorum, her hizmete en az 1)
+- `src/data/projects.ts` → 20 gerçek marka projesi, 9 kategori filtresi
+- `src/data/testimonials.ts` → 11 müşteri yorumu
+- `src/data/team.ts` → 6 ekip üyesi (mock data, gerçek isimler girilmeli)
+
+## Proje Kartı Tasarımı
+- Her kategori için farklı gradient + Lucide ikon: `src/components/sections/references/ProjectCard.tsx`
+- Ana sayfa referans önizlemesi de aynı sistemi kullanıyor: `src/components/sections/home/ReferencesPreview.tsx`
+- Ekip kartları: üye ID'sinden türetilen dinamik gradient + initials avatar
 
 ## Konvansiyonlar
 - Server/Client sınırı: page.tsx Server Component, animasyonlu bölümler "use client"
@@ -78,5 +113,7 @@ src/
 - Merkezi animasyon varyantları: src/lib/animations.ts
 
 ## Bekleyen İşler
-- `REFERENCES.md` → Referanslar sayfası detayları (kullanıcı dolduracak)
-- `TEAM.md` → Ekip üyeleri bilgileri (kullanıcı dolduracak)
+- `TEAM.md` → Gerçek ekip üyesi bilgileri (kullanıcı dolduracak)
+- İletişim formu backend → `src/app/iletisim/actions.ts` (şu an sadece console.log)
+- Gerçek görseller → Tüm proje ve ekip kartları hâlâ placeholder
+- Vercel deploy + creviagency.com domain bağlama (GitHub push hazır)
