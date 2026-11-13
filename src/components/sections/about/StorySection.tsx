@@ -17,19 +17,19 @@ const milestones = [
     year: "2025",
     title: "İlk Müşteriler",
     description:
-      "Kısa sürede Emre Ayaksız, San Kuaför, Dry Center gibi Türkiye'nin tanınmış markalarıyla çalışmaya başladık.",
+      "Farklı sektörlerdeki işletmeler için içerik, reklam ve web projelerinde çalışmaya başladık.",
   },
   {
     year: "2025",
     title: "Hızlı Büyüme",
     description:
-      "İlk yılımızda 50'den fazla firmayla çalışarak 200'ü aşkın projeyi başarıyla tamamladık.",
+      "Dijital pazarlama, üretim ve müşteri operasyonları için ekip ve süreçler oluşturduk.",
   },
   {
     year: "2026",
     title: "Crevia Works",
     description:
-      "Ajanslar için geliştirdiğimiz SaaS platformu Crevia Works'ü hayata geçirdik.",
+      "Satış ve reklam süreçlerine yönelik Crevia Works araçlarını geliştirmeye odaklandık.",
   },
 ];
 
@@ -55,8 +55,8 @@ export default function StorySection() {
               <p>
                 Crevia Agency, Mayıs 2025&apos;te markaların dijitalde ve sahada en güçlü
                 versiyonlarını ortaya çıkarmak amacıyla İstanbul&apos;da kuruldu. Genç ve
-                dinamik bir ekiple başlayan yolculuğumuz, kısa sürede Türkiye&apos;nin
-                önde gelen markalarıyla çalışmamızla devam ediyor.
+                dinamik bir ekiple başlayan yolculuğumuz, kısa sürede farklı
+                sektörlerde iş ihtiyaçlarına yönelik projeler üretmemizle devam ediyor.
               </p>
               <p>
                 Her projede yenilikçi yaklaşımımız, müşteri odaklı çalışma
@@ -66,9 +66,9 @@ export default function StorySection() {
                 hizmet sunuyoruz.
               </p>
               <p>
-                Bugün Emre Ayaksız, San Kuaför, Dry Center, Beko, Mondi, Cindy
-                Güzellik gibi Türkiye&apos;nin güçlü markalarıyla çalışarak onların
-                dijital dönüşüm yolculuklarına rehberlik ediyoruz.
+                Bugün strateji, kreatif prodüksiyon, dijital pazarlama ve otomasyon
+                alanlarında edindiğimiz deneyimi markaların iş hedeflerine
+                uygulanabilir çözümler üretmek için kullanıyoruz.
               </p>
             </div>
           </motion.div>

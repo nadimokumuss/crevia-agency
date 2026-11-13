@@ -12,7 +12,7 @@ import {
   staggerContainer,
 } from "@/lib/animations";
 
-const heroWords = "Dijital Dünyada İz Bırakan Çözümler".split(" ");
+const heroWords = "Stratejiden Üretime, Fikirden Otomasyona".split(" ");
 
 export default function HeroSection() {
   const ref = useRef<HTMLDivElement>(null);
@@ -44,7 +44,7 @@ export default function HeroSection() {
           animate={isInView ? "visible" : "hidden"}
           className="mb-8"
         >
-          <Badge>Yaratıcı Ajans</Badge>
+          <Badge>Strateji • Kreatif • Teknoloji</Badge>
         </motion.div>
 
         {/* Heading with stagger word reveal */}
@@ -98,8 +98,8 @@ export default function HeroSection() {
           <Button href="/hizmetlerimiz" size="lg">
             Hizmetlerimizi Keşfedin
           </Button>
-          <Button href="/referanslarimiz" variant="outline" size="lg">
-            Projelerimiz
+          <Button href="/crevia-works" variant="outline" size="lg">
+            Crevia Works
           </Button>
         </motion.div>
       </Container>

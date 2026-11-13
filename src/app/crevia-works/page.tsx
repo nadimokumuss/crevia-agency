@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import WorksHero from "@/components/sections/crevia-works/WorksHero";
 import ProductsShowcase from "@/components/sections/crevia-works/ProductsShowcase";
-import FeaturesGrid from "@/components/sections/crevia-works/FeaturesGrid";
 import WorksCTA from "@/components/sections/crevia-works/WorksCTA";
 
 export const metadata: Metadata = {
@@ -15,7 +14,6 @@ export default function CreviaWorksPage() {
     <>
       <WorksHero />
       <ProductsShowcase />
-      <FeaturesGrid />
       <WorksCTA />
     </>
   );

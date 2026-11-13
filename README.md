@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Crevia Agency
 
-## Getting Started
+Crevia Agency için sadeleştirilmiş Next.js 16 / TypeScript / Tailwind CSS web sitesi.
 
-First, run the development server:
+## Sayfalar
+- Ana sayfa
+- Hakkımızda
+- Hizmetlerimiz
+- Crevia Works: Crevia Sales OS ve Crevia Ad Bot'un gerçek geliştirme durumları
+- İletişim
 
+Ekip, referans, müşteri yorumları ve sürekli güncellenmesi gereken sayısal KPI bölümleri bilinçli olarak kaldırılmıştır.
+
+## Kurulum
 ```bash
+npm ci
+npm run lint
+npm run build
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## İletişim formunu etkinleştirme
+Site varsayılan olarak çalışan bir **e-posta bağlantısı** gösterir. Sahte form başarı mesajı yoktur.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Gerçek formu açmak için:
+1. Resend hesabı oluşturup gönderici domainini doğrulayın.
+2. Vercel projesine `RESEND_API_KEY` ve `CREVIA_CONTACT_FROM_EMAIL` ortam değişkenlerini girin (`.env.example`).
+3. Yeniden deploy edin; test mesajı gönderip **info@creviagency.com** posta kutusuna ulaştığını doğrulayın.
+4. `CREVIA_CONTACT_FROM_EMAIL` alanındaki e-posta, Resend üzerinde doğrulanmış bir gönderici domaine ait olmalıdır.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Form mesajı yalnızca başarılı API yanıtından sonra kabul edildi olarak gösterir. Basit bot alanı ve sunucu doğrulaması var; yüksek trafik için ayrıca rate limiting / CAPTCHA tavsiye edilir. Alıcı e-posta adresi sunucu tarafında sabittir.
 
-## Learn More
+## SEO
+`NEXT_PUBLIC_SITE_URL` değişkenini gerçek yayın adresine ayarlayın. Bu değer `sitemap.xml`, `robots.txt` ve metadata için kullanılır.
 
-To learn more about Next.js, take a look at the following resources:
+## Ürün açıklamaları
+Crevia Sales OS, geliştirme/iç kullanım aşamasında gösterilir. Crevia Ad Bot, eski prototipten yeni sürüme geçiş planı olarak tanıtılır; çalışır ticari ürün veya aktif demo olduğu iddia edilmez.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Dağıtım
+GitHub branch/PR birleştirildiğinde bağlı Vercel projesi normal deployment akışını izler. Üretime alma öncesi içerik, iletişim formu ve SEO adresi kontrol edilmelidir.

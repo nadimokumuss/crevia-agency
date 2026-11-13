@@ -25,7 +25,7 @@ export default function IletisimPage() {
               <h2 className="font-clash text-2xl font-bold text-white mb-6">
                 Bize Yazın
               </h2>
-              <ContactForm />
+              <ContactForm enabled={Boolean(process.env.RESEND_API_KEY && process.env.CREVIA_CONTACT_FROM_EMAIL)} />
             </div>
 
             {/* Right - Contact Info + Social + Map */}

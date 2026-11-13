@@ -5,12 +5,13 @@ import { Footer } from "@/components/layout/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://crevia-agency.vercel.app"),
   title: {
-    default: "Crevia Agency | Dijital Ajans",
+    default: "Crevia Agency | Strateji, Kreatif ve Teknoloji",
     template: "%s | Crevia Agency",
   },
   description:
-    "Dijital dünyada iz bırakan çözümler. Web tasarım, marka kimliği, dijital pazarlama ve daha fazlası.",
+    "Markalar için dijital strateji, performans pazarlaması, kreatif prodüksiyon ve iş otomasyonu çözümleri.",
   keywords: [
     "dijital ajans",
     "web tasarım",
@@ -24,9 +25,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "tr_TR",
     siteName: "Crevia Agency",
-    title: "Crevia Agency | Dijital Ajans",
+    title: "Crevia Agency | Strateji, Kreatif ve Teknoloji",
     description:
-      "Dijital dünyada iz bırakan çözümler. Web tasarım, marka kimliği, dijital pazarlama ve daha fazlası.",
+      "Markalar için dijital strateji, performans pazarlaması, kreatif prodüksiyon ve iş otomasyonu çözümleri.",
   },
 };
 
