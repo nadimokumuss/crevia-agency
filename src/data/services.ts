@@ -177,15 +177,15 @@ export const services: Service[] = [
     id: "crevia-works",
     title: "Crevia Works",
     description:
-      "Ajanslar ve işletmeler için geliştirdiğimiz SaaS platformu. Proje yönetimi, müşteri portali ve otomatik raporlama ile ajans operasyonlarınızı dijitalleştirin.",
+      "Müşteri keşfi, satış önceliklendirme ve reklam süreçleri için geliştirdiğimiz ve tasarladığımız iş araçlarını keşfedin.",
     shortDescription:
-      "Ajans yönetimini kolaylaştıran SaaS platformumuzla tanışın.",
+      "Satış ve reklam operasyonlarına odaklanan araçlarımızı keşfedin.",
     icon: Sparkles,
     features: [
-      "Ajans Yönetim Paneli",
-      "Müşteri Portal",
-      "Proje Takip Sistemi",
-      "Otomatik Raporlama",
+      "Müşteri Keşfi",
+      "Kural Tabanlı Önceliklendirme",
+      "CRM İş Akışları",
+      "Reklam İzleme Konsepti",
     ],
   },
 ];

@@ -5,9 +5,7 @@ import Logo from "@/components/ui/Logo";
 const quickLinks = [
   { label: "Ana Sayfa", href: "/" },
   { label: "Hakkımızda", href: "/hakkimizda" },
-  { label: "Referanslarımız", href: "/referanslarimiz" },
   { label: "Hizmetlerimiz", href: "/hizmetlerimiz" },
-  { label: "Ekibimiz", href: "/ekibimiz" },
   { label: "Crevia Works", href: "/crevia-works" },
   { label: "İletişim", href: "/iletisim" },
 ];

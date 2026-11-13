@@ -62,7 +62,7 @@ export default function CreviaWorksBanner() {
             transition={{ delay: 0.1 }}
             className="font-clash text-3xl md:text-5xl font-bold text-white mb-6"
           >
-            Ajans Sahipleri İçin SaaS Çözümler
+            Reklam ve Satış İçin İş Araçları
           </motion.h2>
 
           <motion.p
@@ -72,9 +72,9 @@ export default function CreviaWorksBanner() {
             transition={{ delay: 0.2 }}
             className="font-poppins text-nane-yesili/70 text-lg leading-relaxed mb-8 max-w-2xl mx-auto"
           >
-            Crevia Works, dijital ajansların iş süreçlerini kolaylaştıran,
-            proje ve ekip yönetiminden müşteri ilişkilerine kadar her aşamada
-            yanınızda olan kapsamlı bir SaaS platformudur.
+            Crevia Works altında satış ekipleri için müşteri keşfi ve önceliklendirme
+            araçları geliştiriyor; reklam operasyonları için önceki prototipimizi
+            yeniden tasarlıyoruz.
           </motion.p>
 
           <motion.div
